@@ -1,0 +1,22 @@
+import setuptools
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="gradengine",
+    version="0.1.0",
+    author="Bipul Islam",
+    author_email="islam.bipul@gmail.com",
+    description="A tiny scalar-valued autograd engine for computational graphs for backpropagation, and other abstractions",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/ibipul/gradengine",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.10',
+)
