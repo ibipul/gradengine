@@ -19,4 +19,12 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.10',
+    install_requires=[
+        'numpy>=1.20',  # Required for core functionality
+        'requests',     # Another core dependency
+        'graphviz'      # Required for visualization utility
+    ],
+    extras_require={
+        'dev': ['pytest', 'pytest-cov'],
+    },
 )
